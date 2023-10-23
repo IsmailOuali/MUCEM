@@ -1,0 +1,42 @@
+@media only screen and (max-width: 600px) {
+    header{
+        width: 100%;
+    }
+    .navbar-bar{
+        display: none;
+    }
+
+    .section-1{
+      background-image: url(../images/atelier-responsive.png);
+      background-position: center;
+      background-size: cover;
+      height: 40vh;
+      
+            }
+
+    .contact .title{
+        font-size: 2em;
+    }
+
+    .img-countainer{
+        flex-direction: column;
+    }
+
+    .img-countainer img{
+        margin: 2em;
+        width: 20em;
+        height: 10em;
+    }
+
+    .footer-1{
+        flex-direction: column;
+    }
+
+    .menu{
+        flex-direction: column;
+    }
+
+    .info {
+        padding-top: 2em;
+    }
+}

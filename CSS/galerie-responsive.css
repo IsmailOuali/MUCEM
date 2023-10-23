@@ -1,0 +1,38 @@
+@media only screen and (max-width: 600px) {
+    header{
+        width: 100%;
+    }
+
+    .navbar-bar{
+        display: none;
+    }
+
+    .galerie-title{
+        font-size: 3em;
+    }
+
+    .boxes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first-row, .second-row, .third-row{
+        flex-direction: column;
+    }
+
+    video{
+        width: 300px;
+    }
+
+    .footer-1{
+        flex-direction: column;
+    }
+
+    .menu{
+        flex-direction: column;
+    }
+
+    .info {
+        padding-top: 2em;
+    }
+}

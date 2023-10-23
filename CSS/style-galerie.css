@@ -16,7 +16,7 @@ body{
 
 header{
     display: flex;
-    height: 120px;
+    height: 6em;
     justify-content: space-between;
     background-image: url(../images/header-bg.jpg);
     background-size: cover;
@@ -35,33 +35,141 @@ img{
 
 .navbar-bar{
     display: flex;
-    margin: 32px;
+    margin: 3em;
     list-style: none;
     
 }
 
 .navbar-bar div{
     display: flex;
-    width: 140px;
-    height: 50px;
-    border-radius: 30px;
+    width: 7em;
+    height: 3em;
+    border-radius: 1.5em;
     margin: 20px;
     background-color: #041527;
 }
 .navbar-bar a{
-    margin: 32px;
-    font-size: 24px;
+    margin: 3em;
+    font-size: 1.5em;
     margin: auto;
     color: white;
     text-decoration: none;
-    align-items: center;
 }
 
 .navbar-bar-item:hover{
     cursor: pointer;
     scale: 1.1;
     background-color: #0b3561;
+    -webkit-text-stroke: 0.1em black;
 }
 
 
 /* *************** End of Header styling *************** */
+
+
+
+
+
+/* *************** First session styling *************** */
+
+.galerie-section-1{
+    background-image: url(../images/galerie-bg.png);
+    background-size: cover;
+}
+
+.galerie-title{
+    color: #000;
+    font-family: Kalam;
+    font-size: 5em;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 2em;
+}
+
+.boxes{
+    padding: 4em 0;
+}
+
+.first-row, .second-row, .third-row{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em;
+}
+
+.boxes img{
+    box-shadow: rgba(128, 128, 128, 0.785) 1em 1em;
+}
+
+.boxes img:hover{
+    scale: 1.2;
+}
+
+/* *************** Video section styling *************** */
+
+.galerie-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4em;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* *************** Footer section styling *************** */
+
+
+footer{
+    background-image: url(../images/footer.png);
+    background-size: cover;
+}
+
+.footer-1{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3em;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu a{
+    color: #FFF;
+    font-family: Kalam;
+    font-size: 2em;
+    font-style: bold;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info p{
+    color: white;
+    font-family: Kalam;
+    font-size: 1.5em;
+    font-style: bold;
+}
+
+.copyright{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* *************** End of Footer section styling *************** */

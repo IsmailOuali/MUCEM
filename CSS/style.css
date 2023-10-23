@@ -16,7 +16,7 @@ body{
 
 header{
     display: flex;
-    height: 120px;
+    height: 6em;
     justify-content: space-between;
     background-image: url(../images/header-bg.jpg);
     background-size: cover;
@@ -35,22 +35,22 @@ img{
 
 .navbar-bar{
     display: flex;
-    margin: 32px;
+    margin: 3em;
     list-style: none;
     
 }
 
 .navbar-bar div{
     display: flex;
-    width: 140px;
-    height: 50px;
-    border-radius: 30px;
+    width: 7em;
+    height: 3em;
+    border-radius: 1.5em;
     margin: 20px;
     background-color: #041527;
 }
 .navbar-bar a{
-    margin: 32px;
-    font-size: 24px;
+    margin: 3em;
+    font-size: 1.5em;
     margin: auto;
     color: white;
     text-decoration: none;
@@ -60,7 +60,11 @@ img{
     cursor: pointer;
     scale: 1.1;
     background-color: #0b3561;
+    -webkit-text-stroke: 0.1em black;
 }
+
+
+
 
 
 /* *************** End of Header styling *************** */
@@ -74,14 +78,13 @@ img{
 
 
 .section-1{
-    width: 100%;
-    height: 520px;
     background-color: #BBE4E9;
+    padding: 5em;
     display: flex;
 }
 
 .section-1-image{
-    width: 60%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,24 +96,275 @@ img{
 }
 
 .section-1-text{
+    width: 40%;
+    padding: 0 0 0 5em;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    border: solid;
-    padding: 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-1-text button{
+    width: 8em;
+    height: 2em;
+    background-color: #776CEF;
+    border-radius: 5em;
+    font-family: Kalam;
+    font-size: 1.3em;
+    color: aliceblue;
+    font-weight: 500;
+    border-style: none;
+}
+
+.section-1-text button:hover{
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #0b3561;
+    color: black;
 }
 
 .section-1-text p{
     width: 100%;
     font-family: Kalam;
+    text-align: justify;
     font-size: 36px;
     font-weight: 400;
     margin: 8px;
     justify-content: center;
 }
 
-.section-1-button{
+
+
+/* *************** End of First section styling *************** */
+
+
+
+
+/* *************** Second section styling *************** */
+
+
+.section-2{
+    background-image: url(../images/secondsectionbg.png);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2-title{
+    color: #9C1010;
+    font-family: Kalam;
+    font-size: 6em;
+    font-weight: 500;
+    -webkit-text-stroke: 3px white;
     display: flex;
+    justify-content: center;
+}
+
+.section-2-boxes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20em;
+    padding: 7em;
+}
+
+.section-2-boxes .box1, .box2, .box3{
+    background-color: #EEA8E9;
+    height: 13em;
+    border-radius: 5em;
+    text-align: center;
+    font-weight: bold;
+    -webkit-text-stroke: 0.01em white;
+}
+
+.section-2-boxes img{
+    border-radius: 3em;
 }
 
 
 
+/* *************** End of Second section styling *************** */
+
+
+
+
+
+/* *************** Third section styling *************** */
+
+
+.section-3{
+    background-image: url(../images/section-3-bg.png);
+    background-size: cover;
+}
+
+.section-3-title{
+    color: #9C1010;
+    font-family: Kalam;
+    font-size: 6em;
+    font-weight: 500;
+    -webkit-text-stroke: 3px white;
+    display: flex;
+    justify-content: center;
+}
+
+.section-3-boxes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box1-s2 img, .box2-s2 img, .box3-s2 img{
+    height: 13em;
+    margin: 5em;
+    border-radius: 2em;
+    box-shadow: 1em 0.3em rgba(22, 20, 20, 0.628);
+}
+
+
+
+/* *************** End of Third section styling *************** */
+
+
+
+
+/* *************** Forth section styling *************** */
+
+
+
+.section-4{
+    background-image: url(../images/section-3-bg.png);
+    background-size: cover;
+}
+
+.section-4-title{
+    color: #9C1010;
+    font-family: Kalam;
+    font-size: 6em;
+    font-weight: 500;
+    -webkit-text-stroke: 3px white;
+    display: flex;
+    justify-content: center;
+}
+
+.section-4-boxes{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+
+
+.faq{
+    list-style: none;
+    padding: 2em 4em;
+    height: 35em;
+}
+
+.faq li{
+    background-color: #63B68A;
+    border-bottom: 1px #ccc solid;
+}
+
+.faq li:first-child{
+    border-top: 1px #ccc solid;
+}
+
+.q{
+    padding: 1em 0;
+    border-left: 10px #63B68A solid;
+}
+
+.q:hover, .q:hover .arrow{
+    border-left-color: rgb(197, 24, 53);
+    cursor: pointer;
+}
+
+.arrow{
+    display: inline-block;
+    margin: 0 0.5em;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-left: 10px solid #555;
+    border-bottom: 6px solid transparent;
+    transition: 0.3s;
+}
+
+.faq p{
+    color: #2d2929;
+    line-height: 1em;
+}
+
+.a{
+    overflow: hidden;
+    height: 0;
+    padding: 0 1em 0 3em;
+}
+
+.a-opened{
+    padding: 1em 1em 2em 3em;
+    height: initial;
+}
+
+.arrow-rotated{
+    transform: rotate(90deg);
+}
+
+
+    /* *************** End of the Forth section styling *************** */
+    
+    
+    
+    /* *************** Footer section styling *************** */
+    
+    footer{
+        background-image: url(../images/footer.png);
+        background-size: cover;
+    }
+    
+    .footer-1{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 3em;
+    }
+    
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .menu a{
+        color: #FFF;
+        font-family: Kalam;
+        font-size: 2em;
+        font-style: bold;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration-line: underline;
+    }
+    
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .info p{
+        color: white;
+        font-family: Kalam;
+        font-size: 1.5em;
+        font-style: bold;
+    }
+    
+    .copyright{
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+    
+
+    /* *************** End of Footer section styling *************** */
