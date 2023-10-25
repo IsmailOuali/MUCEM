@@ -3,9 +3,57 @@
     header{
         width: 100%;
     }
-    .navbar-bar{
-        display: none;
+
+    .navbar{
+        display: block;
     }
+
+    #icons{
+        display: block;
+        cursor: pointer;
+    }
+
+    
+    #icons::before{
+        content: "\2630";
+        color: black;
+        font-size: 4em;
+    }
+    
+
+    .navbar-bar{
+        position: fixed;
+        left: -100%;
+        top: 5%;
+        flex-direction: column;
+        text-align: center;
+        background-color: skyblue;
+        transition: 0.3s;
+    }
+    .navbar-bar div{
+        background-color: #04152764;
+    }
+
+    .navbar-bar div a{
+        color: black;
+    }
+
+    .navbar-bar-item{
+        margin: 15px 0;
+
+    }
+
+    .navbar-bar.active{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: -46px;
+        background-color: rgba(135, 207, 235, 0.489);
+    }
+
+
+
     .section-1{
         flex-direction: column;
         padding:   2em;
@@ -48,6 +96,15 @@
 
     .section-3-boxes{
         flex-direction: column;
+    }
+
+    .faq{
+        height: 120em;
+    }
+
+    .a-opened{
+        padding: 1em 1em 4em 5em;
+        height: initial;
     }
 
     .footer-1{

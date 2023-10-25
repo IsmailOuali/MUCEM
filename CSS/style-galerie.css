@@ -97,10 +97,12 @@ img{
 }
 
 .boxes img{
-    box-shadow: rgba(128, 128, 128, 0.785) 1em 1em;
+    border-radius: 2rem;
+    box-shadow: rgba(128, 128, 128, 0.785)  4em 1em 2em;
 }
 
 .boxes img:hover{
+    
     scale: 1.2;
 }
 
@@ -111,11 +113,12 @@ img{
     justify-content: center;
     align-items: center;
     padding: 4em;
+    
 }
 
-
-
-
+.galerie-video video{
+    border-radius: 2em;
+}
 
 
 
